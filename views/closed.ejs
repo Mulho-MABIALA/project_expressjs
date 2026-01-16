@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Service Indisponible - Notre Entreprise</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="logo">MonEntreprise</div>
+      <ul class="nav-links">
+        <li><a href="/">Accueil</a></li>
+        <li><a href="/services">Nos services</a></li>
+        <li><a href="/contact">Nous contacter</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="container">
+    <section class="closed-message">
+      <div class="closed-icon">🕐</div>
+      <h1>Service Indisponible</h1>
+      <div class="closed-info">
+        <p class="closed-text">
+          Nous sommes actuellement fermés. Notre site web est disponible uniquement pendant nos heures de travail.
+        </p>
+
+        <div class="time-info">
+          <p><strong>Jour actuel:</strong> <%= day %></p>
+          <p><strong>Heure actuelle:</strong> <%= hour %></p>
+        </div>
+
+        <div class="schedule">
+          <h2>Nos horaires d'ouverture</h2>
+          <ul>
+            <li>Lundi - Vendredi: 9h00 - 17h00</li>
+            <li>Samedi - Dimanche: Fermé</li>
+          </ul>
+        </div>
+
+        <div class="closed-contact">
+          <p>Pour toute urgence, vous pouvez nous contacter par email:</p>
+          <a href="mailto:contact@monentreprise.fr" class="email-link">contact@monentreprise.fr</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2026 MonEntreprise. Tous droits réservés.</p>
+  </footer>
+</body>
+</html>

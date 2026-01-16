@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nous Contacter - Notre Entreprise</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="logo">MonEntreprise</div>
+      <ul class="nav-links">
+        <li><a href="/" class="<%= currentPage === 'home' ? 'active' : '' %>">Accueil</a></li>
+        <li><a href="/services" class="<%= currentPage === 'services' ? 'active' : '' %>">Nos services</a></li>
+        <li><a href="/contact" class="<%= currentPage === 'contact' ? 'active' : '' %>">Nous contacter</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="container">
+    <section class="hero">
+      <h1>Contactez-nous</h1>
+      <p class="subtitle">Nous sommes là pour répondre à vos questions</p>
+    </section>
+
+    <section class="content contact-section">
+      <div class="contact-info">
+        <div class="card">
+          <h2>Informations de Contact</h2>
+
+          <div class="contact-item">
+            <h3>📍 Adresse</h3>
+            <p>123 Avenue de l'Innovation<br>75001 Paris, France</p>
+          </div>
+
+          <div class="contact-item">
+            <h3>📞 Téléphone</h3>
+            <p>+33 1 23 45 67 89</p>
+          </div>
+
+          <div class="contact-item">
+            <h3>📧 Email</h3>
+            <p>contact@monentreprise.fr</p>
+          </div>
+
+          <div class="contact-item">
+            <h3>🕐 Horaires d'ouverture</h3>
+            <p>
+              Lundi - Vendredi: 9h00 - 17h00<br>
+              Samedi - Dimanche: Fermé
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-form">
+        <div class="card">
+          <h2>Envoyez-nous un message</h2>
+          <form>
+            <div class="form-group">
+              <label for="name">Nom complet</label>
+              <input type="text" id="name" name="name" required placeholder="Votre nom">
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required placeholder="votre.email@exemple.com">
+            </div>
+
+            <div class="form-group">
+              <label for="phone">Téléphone</label>
+              <input type="tel" id="phone" name="phone" placeholder="+33 1 23 45 67 89">
+            </div>
+
+            <div class="form-group">
+              <label for="subject">Sujet</label>
+              <select id="subject" name="subject" required>
+                <option value="">Sélectionnez un sujet</option>
+                <option value="info">Demande d'information</option>
+                <option value="quote">Demande de devis</option>
+                <option value="support">Support technique</option>
+                <option value="other">Autre</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" required placeholder="Votre message..."></textarea>
+            </div>
+
+            <button type="submit" class="btn-submit">Envoyer le message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2026 MonEntreprise. Tous droits réservés.</p>
+    <p>Horaires: Lundi - Vendredi, 9h00 - 17h00</p>
+  </footer>
+</body>
+</html>

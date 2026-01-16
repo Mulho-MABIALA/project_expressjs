@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Accueil - Notre Entreprise</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="logo">MonEntreprise</div>
+      <ul class="nav-links">
+        <li><a href="/" class="<%= currentPage === 'home' ? 'active' : '' %>">Accueil</a></li>
+        <li><a href="/services" class="<%= currentPage === 'services' ? 'active' : '' %>">Nos services</a></li>
+        <li><a href="/contact" class="<%= currentPage === 'contact' ? 'active' : '' %>">Nous contacter</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="container">
+    <section class="hero">
+      <h1>Bienvenue chez MonEntreprise</h1>
+      <p class="subtitle">Votre partenaire de confiance pour des solutions innovantes</p>
+    </section>
+
+    <section class="content">
+      <div class="card">
+        <h2>Qui sommes-nous?</h2>
+        <p>
+          MonEntreprise est une entreprise dynamique spécialisée dans le développement de solutions
+          technologiques sur mesure. Avec plus de 10 ans d'expérience, nous aidons nos clients à
+          transformer leurs idées en réalité.
+        </p>
+      </div>
+
+      <div class="card">
+        <h2>Notre Mission</h2>
+        <p>
+          Fournir des services de qualité supérieure et accompagner nos clients dans leur
+          transformation digitale. Nous croyons en l'innovation, l'excellence et la satisfaction client.
+        </p>
+      </div>
+
+      <div class="card">
+        <h2>Pourquoi nous choisir?</h2>
+        <ul>
+          <li>Équipe d'experts qualifiés</li>
+          <li>Solutions personnalisées</li>
+          <li>Support client 24/7</li>
+          <li>Prix compétitifs</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2026 MonEntreprise. Tous droits réservés.</p>
+    <p>Horaires: Lundi - Vendredi, 9h00 - 17h00</p>
+  </footer>
+</body>
+</html>
